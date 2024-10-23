@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background-color: hsl(202, 86%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body main {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  min-height: 500px;
+}
+body main form {
+  padding: 35px 35px;
+  display: flex;
+  flex-direction: column;
+}
+body main form input[type=number] {
+  padding: 10px 8px;
+  outline: none;
+}
+body main form label {
+  font-size: 0.95rem;
+  padding: 10px 0;
+}
+body main form .error {
+  color: hsl(4, 69%, 50%);
+  font-size: 0.8rem;
+  margin-top: 8px;
+  display: none;
+}
+body main form header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+body main form header h1 {
+  font-size: 1.4rem;
+  color: hsl(202, 55%, 16%);
+}
+body main form header button {
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  text-decoration: underline;
+  text-decoration-color: hsl(203, 41%, 72%);
+  cursor: pointer;
+}
+body main form .input-container {
+  display: flex;
+  border: 1.5px solid hsl(200, 24%, 40%);
+  align-items: center;
+  border-radius: 5px;
+}
+body main form .input-container:hover {
+  border-color: hsl(202, 55%, 16%);
+}
+body main form .input-container p {
+  background-color: hsl(202, 86%, 94%);
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  color: hsl(202, 55%, 16%);
+  font-weight: 500;
+}
+body main form .input-container input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  color: hsl(202, 55%, 16%);
+  font-weight: 900;
+}
+body main form .input-container input::-moz-placeholder {
+  opacity: 0.5;
+}
+body main form .input-container input::placeholder {
+  opacity: 0.5;
+}
+body main form fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 5px;
+  margin-top: 15px;
+}
+body main form fieldset legend {
+  margin-bottom: 10px;
+}
+body main form fieldset .radio-btn {
+  display: flex;
+  font-weight: 900;
+  border: 1px solid hsl(202, 55%, 16%);
+  border-radius: 5px;
+  accent-color: #d7da2f;
+}
+body main form fieldset .radio-btn:hover {
+  border-color: #d7da2f;
+  cursor: pointer;
+}
+body main form fieldset .radio-btn input[type=radio] {
+  margin-left: 25px;
+}
+body main form fieldset .radio-btn input[type=radio]:hover {
+  cursor: pointer;
+}
+body main form fieldset .radio-btn label {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+body main form .term-rate-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+body main form .term-rate-container .term-container label {
+  display: block;
+  font-size: 0.95rem;
+  padding: 8px 0;
+  color: hsl(202, 55%, 16%);
+}
+body main form .term-rate-container .rate-container label {
+  display: block;
+  font-size: 0.95rem;
+  padding: 8px 0;
+}
+body main form .term-rate-container .input-container {
+  display: flex;
+}
+body main form .term-rate-container .input-container p {
+  background-color: hsl(202, 86%, 94%);
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  color: hsl(202, 55%, 16%);
+  font-weight: 500;
+}
+body main form .term-rate-container .input-container input {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+  height: 100%;
+  padding: 12px 10px;
+}
+body main form .repayment-btn {
+  background-color: #d7da2f;
+  font-weight: 900;
+  border: none;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+  cursor: pointer;
+}
+body main form .repayment-btn:hover {
+  opacity: 0.8;
+}
+body main .empty-results {
+  background-color: hsl(202, 55%, 16%);
+  border-radius: 0 15px 15px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 20px;
+  max-width: 500px;
+}
+body main .empty-results img {
+  width: 200px;
+}
+body main .empty-results h2 {
+  color: hsl(0, 0%, 100%);
+}
+body main .empty-results p, body main .empty-results h3 {
+  color: hsl(203, 41%, 72%);
+  font-size: 0.95rem;
+}
+body main .completed-results {
+  background-color: hsl(202, 55%, 16%);
+  border-radius: 0 15px 15px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 40px;
+  max-width: 500px;
+  display: none;
+}
+body main .completed-results h2 {
+  color: hsl(0, 0%, 100%);
+}
+body main .completed-results p {
+  color: hsl(203, 41%, 72%);
+  margin-bottom: 20px;
+}
+body main .completed-results .results-container {
+  background-color: hsl(201, 56%, 11%);
+  padding: 25px;
+  border-top: 3px solid #d7da2f;
+  border-radius: 10px;
+}
+body main .completed-results .results-container h3 {
+  color: hsl(202, 86%, 94%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+body main .completed-results .results-container .monthly-repayments {
+  color: #d7da2f;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 25px 0;
+  border-bottom: 1px solid hsl(202, 55%, 16%);
+  margin-bottom: 35px;
+}
+body main .completed-results .results-container .total-payment {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+body main .attribution {
+  display: none;
+}
+
+@media (max-width: 825px) {
+  body {
+    display: block;
+  }
+  body main {
+    flex-direction: column;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  body main .completed-results {
+    border-radius: 0;
+  }
+  body main .empty-results {
+    border-radius: 0;
+  }
+}
+@media (max-width: 500px) {
+  .term-rate-container {
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
